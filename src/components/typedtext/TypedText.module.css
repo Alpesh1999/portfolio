@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.typedText {
+  display: inline-block;
+  color: #fff;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  animation: cursorBlink 0.7s infinite;
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

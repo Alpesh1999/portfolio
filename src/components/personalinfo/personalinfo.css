@@ -1,0 +1,57 @@
+.personal_info {
+  width: 33%;
+  background-color: var(--primary-glow);
+  box-shadow: 0px 0px 12px 30px #0071ff33;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1024;
+}
+
+.profile_img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.name {
+  color: var(--primary);
+  margin: 10px 0px;
+}
+.my_position {
+  margin: 8px 0 15px;
+}
+
+.cv_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.border-end {
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.cv_contact_link {
+  width: 50%;
+  padding: 12px;
+  cursor: pointer;
+  color: var(--light);
+  font-size: 16px;
+  transition: 0.5s all ease-in-out;
+}
+.cv_contact_link:hover {
+  background: var(--primary);
+}
+
+/* mediastart */
+@media screen and (max-width: 991px) {
+  .personal_info {
+    width: 100%;
+    height: unset;
+    position: relative;
+  }
+}
